@@ -1,0 +1,5 @@
+/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/edit_cache.dir
+/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/rebuild_cache.dir
+/Users/mwo/Documents/GitHub/C++/Practice/Math/build/src/CMakeFiles/MyProjectApp.dir
+/Users/mwo/Documents/GitHub/C++/Practice/Math/build/src/CMakeFiles/edit_cache.dir
+/Users/mwo/Documents/GitHub/C++/Practice/Math/build/src/CMakeFiles/rebuild_cache.dir
