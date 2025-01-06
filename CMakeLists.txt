@@ -4,9 +4,11 @@ project(MyProjectApp LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 
-# If you want to use subdirectories:
+# subdirectories:
 add_subdirectory(src)
-# add_subdirectory(third_party) if needed
-
+add_subdirectory(third_party/glfw)
+add_subdirectory(third_party/glad)
+add_subdirectory(third_party/imgui)
+add_subdirectory(third_party/glm)
 add_definitions(-DGL_SILENCE_DEPRECATION)
 

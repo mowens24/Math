@@ -13,13 +13,13 @@ add_executable(MyProjectApp ${SRC_FILES})
 target_include_directories(MyProjectApp 
     PRIVATE 
         ${CMAKE_SOURCE_DIR}/include
-        ${CMAKE_SOURCE_DIR}/vendor
-        ${CMAKE_SOURCE_DIR}/vendor/imgui
-        ${CMAKE_SOURCE_DIR}/vendor/glad/include
-        ${CMAKE_SOURCE_DIR}/vendor/glfw/include
-        ${CMAKE_SOURCE_DIR}/vendor/glm
-        ${CMAKE_SOURCE_DIR}/vendor/stb
-        ${CMAKE_SOURCE_DIR}/third_party/muparser/include
+        ${CMAKE_SOURCE_DIR}/third_party
+        ${CMAKE_SOURCE_DIR}/third_party/imgui
+        ${CMAKE_SOURCE_DIR}/third_party/glad
+        ${CMAKE_SOURCE_DIR}/third_party/glfw
+        ${CMAKE_SOURCE_DIR}/third_party/glm
+        ${CMAKE_SOURCE_DIR}/third_party/stb
+        ${CMAKE_SOURCE_DIR}/third_party/muparser/
 )
 
 
@@ -31,7 +31,7 @@ target_link_libraries(MyProjectApp
         glfw
         glad
         imgui
-        -framework OpenGL
+        
 )
 
 

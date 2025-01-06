@@ -76,57 +76,57 @@ src/CMakeFiles/MyProjectApp.dir/main.cpp.o: src/CMakeFiles/MyProjectApp.dir/flag
 src/CMakeFiles/MyProjectApp.dir/main.cpp.o: /Users/mwo/Documents/GitHub/C++/Practice/Math/src/main.cpp
 src/CMakeFiles/MyProjectApp.dir/main.cpp.o: src/CMakeFiles/MyProjectApp.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/MyProjectApp.dir/main.cpp.o"
-	cd /Users/mwo/Documents/GitHub/C++/Practice/Math/build/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/MyProjectApp.dir/main.cpp.o -MF CMakeFiles/MyProjectApp.dir/main.cpp.o.d -o CMakeFiles/MyProjectApp.dir/main.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/src/main.cpp
+	cd /Users/mwo/Documents/GitHub/C++/Practice/Math/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/MyProjectApp.dir/main.cpp.o -MF CMakeFiles/MyProjectApp.dir/main.cpp.o.d -o CMakeFiles/MyProjectApp.dir/main.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/src/main.cpp
 
 src/CMakeFiles/MyProjectApp.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyProjectApp.dir/main.cpp.i"
-	cd /Users/mwo/Documents/GitHub/C++/Practice/Math/build/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mwo/Documents/GitHub/C++/Practice/Math/src/main.cpp > CMakeFiles/MyProjectApp.dir/main.cpp.i
+	cd /Users/mwo/Documents/GitHub/C++/Practice/Math/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mwo/Documents/GitHub/C++/Practice/Math/src/main.cpp > CMakeFiles/MyProjectApp.dir/main.cpp.i
 
 src/CMakeFiles/MyProjectApp.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyProjectApp.dir/main.cpp.s"
-	cd /Users/mwo/Documents/GitHub/C++/Practice/Math/build/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mwo/Documents/GitHub/C++/Practice/Math/src/main.cpp -o CMakeFiles/MyProjectApp.dir/main.cpp.s
+	cd /Users/mwo/Documents/GitHub/C++/Practice/Math/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mwo/Documents/GitHub/C++/Practice/Math/src/main.cpp -o CMakeFiles/MyProjectApp.dir/main.cpp.s
 
 src/CMakeFiles/MyProjectApp.dir/Application.cpp.o: src/CMakeFiles/MyProjectApp.dir/flags.make
 src/CMakeFiles/MyProjectApp.dir/Application.cpp.o: /Users/mwo/Documents/GitHub/C++/Practice/Math/src/Application.cpp
 src/CMakeFiles/MyProjectApp.dir/Application.cpp.o: src/CMakeFiles/MyProjectApp.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/MyProjectApp.dir/Application.cpp.o"
-	cd /Users/mwo/Documents/GitHub/C++/Practice/Math/build/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/MyProjectApp.dir/Application.cpp.o -MF CMakeFiles/MyProjectApp.dir/Application.cpp.o.d -o CMakeFiles/MyProjectApp.dir/Application.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/src/Application.cpp
+	cd /Users/mwo/Documents/GitHub/C++/Practice/Math/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/MyProjectApp.dir/Application.cpp.o -MF CMakeFiles/MyProjectApp.dir/Application.cpp.o.d -o CMakeFiles/MyProjectApp.dir/Application.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/src/Application.cpp
 
 src/CMakeFiles/MyProjectApp.dir/Application.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyProjectApp.dir/Application.cpp.i"
-	cd /Users/mwo/Documents/GitHub/C++/Practice/Math/build/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mwo/Documents/GitHub/C++/Practice/Math/src/Application.cpp > CMakeFiles/MyProjectApp.dir/Application.cpp.i
+	cd /Users/mwo/Documents/GitHub/C++/Practice/Math/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mwo/Documents/GitHub/C++/Practice/Math/src/Application.cpp > CMakeFiles/MyProjectApp.dir/Application.cpp.i
 
 src/CMakeFiles/MyProjectApp.dir/Application.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyProjectApp.dir/Application.cpp.s"
-	cd /Users/mwo/Documents/GitHub/C++/Practice/Math/build/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mwo/Documents/GitHub/C++/Practice/Math/src/Application.cpp -o CMakeFiles/MyProjectApp.dir/Application.cpp.s
+	cd /Users/mwo/Documents/GitHub/C++/Practice/Math/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mwo/Documents/GitHub/C++/Practice/Math/src/Application.cpp -o CMakeFiles/MyProjectApp.dir/Application.cpp.s
 
 src/CMakeFiles/MyProjectApp.dir/Renderer.cpp.o: src/CMakeFiles/MyProjectApp.dir/flags.make
 src/CMakeFiles/MyProjectApp.dir/Renderer.cpp.o: /Users/mwo/Documents/GitHub/C++/Practice/Math/src/Renderer.cpp
 src/CMakeFiles/MyProjectApp.dir/Renderer.cpp.o: src/CMakeFiles/MyProjectApp.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/MyProjectApp.dir/Renderer.cpp.o"
-	cd /Users/mwo/Documents/GitHub/C++/Practice/Math/build/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/MyProjectApp.dir/Renderer.cpp.o -MF CMakeFiles/MyProjectApp.dir/Renderer.cpp.o.d -o CMakeFiles/MyProjectApp.dir/Renderer.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/src/Renderer.cpp
+	cd /Users/mwo/Documents/GitHub/C++/Practice/Math/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/MyProjectApp.dir/Renderer.cpp.o -MF CMakeFiles/MyProjectApp.dir/Renderer.cpp.o.d -o CMakeFiles/MyProjectApp.dir/Renderer.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/src/Renderer.cpp
 
 src/CMakeFiles/MyProjectApp.dir/Renderer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyProjectApp.dir/Renderer.cpp.i"
-	cd /Users/mwo/Documents/GitHub/C++/Practice/Math/build/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mwo/Documents/GitHub/C++/Practice/Math/src/Renderer.cpp > CMakeFiles/MyProjectApp.dir/Renderer.cpp.i
+	cd /Users/mwo/Documents/GitHub/C++/Practice/Math/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mwo/Documents/GitHub/C++/Practice/Math/src/Renderer.cpp > CMakeFiles/MyProjectApp.dir/Renderer.cpp.i
 
 src/CMakeFiles/MyProjectApp.dir/Renderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyProjectApp.dir/Renderer.cpp.s"
-	cd /Users/mwo/Documents/GitHub/C++/Practice/Math/build/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mwo/Documents/GitHub/C++/Practice/Math/src/Renderer.cpp -o CMakeFiles/MyProjectApp.dir/Renderer.cpp.s
+	cd /Users/mwo/Documents/GitHub/C++/Practice/Math/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mwo/Documents/GitHub/C++/Practice/Math/src/Renderer.cpp -o CMakeFiles/MyProjectApp.dir/Renderer.cpp.s
 
 src/CMakeFiles/MyProjectApp.dir/ImGuiLayer.cpp.o: src/CMakeFiles/MyProjectApp.dir/flags.make
 src/CMakeFiles/MyProjectApp.dir/ImGuiLayer.cpp.o: /Users/mwo/Documents/GitHub/C++/Practice/Math/src/ImGuiLayer.cpp
 src/CMakeFiles/MyProjectApp.dir/ImGuiLayer.cpp.o: src/CMakeFiles/MyProjectApp.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/MyProjectApp.dir/ImGuiLayer.cpp.o"
-	cd /Users/mwo/Documents/GitHub/C++/Practice/Math/build/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/MyProjectApp.dir/ImGuiLayer.cpp.o -MF CMakeFiles/MyProjectApp.dir/ImGuiLayer.cpp.o.d -o CMakeFiles/MyProjectApp.dir/ImGuiLayer.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/src/ImGuiLayer.cpp
+	cd /Users/mwo/Documents/GitHub/C++/Practice/Math/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/MyProjectApp.dir/ImGuiLayer.cpp.o -MF CMakeFiles/MyProjectApp.dir/ImGuiLayer.cpp.o.d -o CMakeFiles/MyProjectApp.dir/ImGuiLayer.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/src/ImGuiLayer.cpp
 
 src/CMakeFiles/MyProjectApp.dir/ImGuiLayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyProjectApp.dir/ImGuiLayer.cpp.i"
-	cd /Users/mwo/Documents/GitHub/C++/Practice/Math/build/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mwo/Documents/GitHub/C++/Practice/Math/src/ImGuiLayer.cpp > CMakeFiles/MyProjectApp.dir/ImGuiLayer.cpp.i
+	cd /Users/mwo/Documents/GitHub/C++/Practice/Math/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mwo/Documents/GitHub/C++/Practice/Math/src/ImGuiLayer.cpp > CMakeFiles/MyProjectApp.dir/ImGuiLayer.cpp.i
 
 src/CMakeFiles/MyProjectApp.dir/ImGuiLayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyProjectApp.dir/ImGuiLayer.cpp.s"
-	cd /Users/mwo/Documents/GitHub/C++/Practice/Math/build/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mwo/Documents/GitHub/C++/Practice/Math/src/ImGuiLayer.cpp -o CMakeFiles/MyProjectApp.dir/ImGuiLayer.cpp.s
+	cd /Users/mwo/Documents/GitHub/C++/Practice/Math/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mwo/Documents/GitHub/C++/Practice/Math/src/ImGuiLayer.cpp -o CMakeFiles/MyProjectApp.dir/ImGuiLayer.cpp.s
 
 # Object files for target MyProjectApp
 MyProjectApp_OBJECTS = \
@@ -143,6 +143,7 @@ src/MyProjectApp: src/CMakeFiles/MyProjectApp.dir/Application.cpp.o
 src/MyProjectApp: src/CMakeFiles/MyProjectApp.dir/Renderer.cpp.o
 src/MyProjectApp: src/CMakeFiles/MyProjectApp.dir/ImGuiLayer.cpp.o
 src/MyProjectApp: src/CMakeFiles/MyProjectApp.dir/build.make
+src/MyProjectApp: third_party/glfw/src/libglfw3.a
 src/MyProjectApp: src/CMakeFiles/MyProjectApp.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable MyProjectApp"
 	cd /Users/mwo/Documents/GitHub/C++/Practice/Math/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyProjectApp.dir/link.txt --verbose=$(VERBOSE)
