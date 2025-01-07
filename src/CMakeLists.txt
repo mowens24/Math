@@ -22,16 +22,16 @@ target_include_directories(MyProjectApp
         ${CMAKE_SOURCE_DIR}/third_party/muparser/
 )
 
-
-# Link libraries:
+# Link libraries
 target_link_libraries(MyProjectApp
     PRIVATE
-        muparser
-        glm
-        glfw
         glad
+        glfw
+        muparser        # Link against muparser
         imgui
-        
+        glm             # Link against the GLM interface library
+        OpenGL::GL
+        # Add other libraries as needed
 )
 
 
