@@ -1,0 +1,230 @@
+[
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src",
+  "command": "/opt/homebrew/opt/llvm/bin/clang -D_GLFW_COCOA -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/include -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src -I/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/context.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/context.c",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/context.c",
+  "output": "third_party/glfw/src/CMakeFiles/glfw.dir/context.c.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src",
+  "command": "/opt/homebrew/opt/llvm/bin/clang -D_GLFW_COCOA -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/include -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src -I/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/init.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/init.c",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/init.c",
+  "output": "third_party/glfw/src/CMakeFiles/glfw.dir/init.c.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src",
+  "command": "/opt/homebrew/opt/llvm/bin/clang -D_GLFW_COCOA -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/include -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src -I/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/input.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/input.c",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/input.c",
+  "output": "third_party/glfw/src/CMakeFiles/glfw.dir/input.c.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src",
+  "command": "/opt/homebrew/opt/llvm/bin/clang -D_GLFW_COCOA -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/include -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src -I/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/monitor.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/monitor.c",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/monitor.c",
+  "output": "third_party/glfw/src/CMakeFiles/glfw.dir/monitor.c.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src",
+  "command": "/opt/homebrew/opt/llvm/bin/clang -D_GLFW_COCOA -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/include -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src -I/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/platform.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/platform.c",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/platform.c",
+  "output": "third_party/glfw/src/CMakeFiles/glfw.dir/platform.c.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src",
+  "command": "/opt/homebrew/opt/llvm/bin/clang -D_GLFW_COCOA -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/include -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src -I/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/vulkan.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/vulkan.c",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/vulkan.c",
+  "output": "third_party/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src",
+  "command": "/opt/homebrew/opt/llvm/bin/clang -D_GLFW_COCOA -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/include -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src -I/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/window.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/window.c",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/window.c",
+  "output": "third_party/glfw/src/CMakeFiles/glfw.dir/window.c.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src",
+  "command": "/opt/homebrew/opt/llvm/bin/clang -D_GLFW_COCOA -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/include -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src -I/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/egl_context.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/egl_context.c",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/egl_context.c",
+  "output": "third_party/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src",
+  "command": "/opt/homebrew/opt/llvm/bin/clang -D_GLFW_COCOA -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/include -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src -I/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/osmesa_context.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/osmesa_context.c",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/osmesa_context.c",
+  "output": "third_party/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src",
+  "command": "/opt/homebrew/opt/llvm/bin/clang -D_GLFW_COCOA -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/include -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src -I/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/null_init.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/null_init.c",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/null_init.c",
+  "output": "third_party/glfw/src/CMakeFiles/glfw.dir/null_init.c.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src",
+  "command": "/opt/homebrew/opt/llvm/bin/clang -D_GLFW_COCOA -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/include -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src -I/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/null_monitor.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/null_monitor.c",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/null_monitor.c",
+  "output": "third_party/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src",
+  "command": "/opt/homebrew/opt/llvm/bin/clang -D_GLFW_COCOA -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/include -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src -I/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/null_window.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/null_window.c",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/null_window.c",
+  "output": "third_party/glfw/src/CMakeFiles/glfw.dir/null_window.c.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src",
+  "command": "/opt/homebrew/opt/llvm/bin/clang -D_GLFW_COCOA -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/include -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src -I/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/null_joystick.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/null_joystick.c",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/null_joystick.c",
+  "output": "third_party/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src",
+  "command": "/opt/homebrew/opt/llvm/bin/clang -D_GLFW_COCOA -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/include -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src -I/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_time.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/cocoa_time.c",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/cocoa_time.c",
+  "output": "third_party/glfw/src/CMakeFiles/glfw.dir/cocoa_time.c.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src",
+  "command": "/opt/homebrew/opt/llvm/bin/clang -D_GLFW_COCOA -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/include -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src -I/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/posix_module.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/posix_module.c",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/posix_module.c",
+  "output": "third_party/glfw/src/CMakeFiles/glfw.dir/posix_module.c.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src",
+  "command": "/opt/homebrew/opt/llvm/bin/clang -D_GLFW_COCOA -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/include -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src -I/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/posix_thread.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/posix_thread.c",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/posix_thread.c",
+  "output": "third_party/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src",
+  "command": "/opt/homebrew/opt/llvm/bin/clang -D_GLFW_COCOA -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/include -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src -I/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_init.m.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/cocoa_init.m",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/cocoa_init.m",
+  "output": "third_party/glfw/src/CMakeFiles/glfw.dir/cocoa_init.m.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src",
+  "command": "/opt/homebrew/opt/llvm/bin/clang -D_GLFW_COCOA -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/include -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src -I/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_joystick.m.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/cocoa_joystick.m",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/cocoa_joystick.m",
+  "output": "third_party/glfw/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src",
+  "command": "/opt/homebrew/opt/llvm/bin/clang -D_GLFW_COCOA -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/include -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src -I/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_monitor.m.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/cocoa_monitor.m",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/cocoa_monitor.m",
+  "output": "third_party/glfw/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src",
+  "command": "/opt/homebrew/opt/llvm/bin/clang -D_GLFW_COCOA -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/include -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src -I/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_window.m.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/cocoa_window.m",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/cocoa_window.m",
+  "output": "third_party/glfw/src/CMakeFiles/glfw.dir/cocoa_window.m.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src",
+  "command": "/opt/homebrew/opt/llvm/bin/clang -D_GLFW_COCOA -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/include -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src -I/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/glfw/src -std=c99 -arch arm64 -fPIC -Wall -o CMakeFiles/glfw.dir/nsgl_context.m.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/nsgl_context.m",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/src/nsgl_context.m",
+  "output": "third_party/glfw/src/CMakeFiles/glfw.dir/nsgl_context.m.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/muparser",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -DMUPARSER_DLL -DMUPARSER_STATIC -DMUP_USE_OPENMP -D_DEBUG -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/include -std=gnu++20 -arch arm64 -fopenmp=libomp -fopenmp=libomp -o CMakeFiles/muparser.dir/src/muParser.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/src/muParser.cpp",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/src/muParser.cpp",
+  "output": "third_party/muparser/CMakeFiles/muparser.dir/src/muParser.cpp.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/muparser",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -DMUPARSER_DLL -DMUPARSER_STATIC -DMUP_USE_OPENMP -D_DEBUG -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/include -std=gnu++20 -arch arm64 -fopenmp=libomp -fopenmp=libomp -o CMakeFiles/muparser.dir/src/muParserBase.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/src/muParserBase.cpp",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/src/muParserBase.cpp",
+  "output": "third_party/muparser/CMakeFiles/muparser.dir/src/muParserBase.cpp.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/muparser",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -DMUPARSER_DLL -DMUPARSER_STATIC -DMUP_USE_OPENMP -D_DEBUG -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/include -std=gnu++20 -arch arm64 -fopenmp=libomp -fopenmp=libomp -o CMakeFiles/muparser.dir/src/muParserBytecode.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/src/muParserBytecode.cpp",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/src/muParserBytecode.cpp",
+  "output": "third_party/muparser/CMakeFiles/muparser.dir/src/muParserBytecode.cpp.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/muparser",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -DMUPARSER_DLL -DMUPARSER_STATIC -DMUP_USE_OPENMP -D_DEBUG -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/include -std=gnu++20 -arch arm64 -fopenmp=libomp -fopenmp=libomp -o CMakeFiles/muparser.dir/src/muParserCallback.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/src/muParserCallback.cpp",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/src/muParserCallback.cpp",
+  "output": "third_party/muparser/CMakeFiles/muparser.dir/src/muParserCallback.cpp.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/muparser",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -DMUPARSER_DLL -DMUPARSER_STATIC -DMUP_USE_OPENMP -D_DEBUG -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/include -std=gnu++20 -arch arm64 -fopenmp=libomp -fopenmp=libomp -o CMakeFiles/muparser.dir/src/muParserDLL.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/src/muParserDLL.cpp",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/src/muParserDLL.cpp",
+  "output": "third_party/muparser/CMakeFiles/muparser.dir/src/muParserDLL.cpp.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/muparser",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -DMUPARSER_DLL -DMUPARSER_STATIC -DMUP_USE_OPENMP -D_DEBUG -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/include -std=gnu++20 -arch arm64 -fopenmp=libomp -fopenmp=libomp -o CMakeFiles/muparser.dir/src/muParserError.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/src/muParserError.cpp",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/src/muParserError.cpp",
+  "output": "third_party/muparser/CMakeFiles/muparser.dir/src/muParserError.cpp.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/muparser",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -DMUPARSER_DLL -DMUPARSER_STATIC -DMUP_USE_OPENMP -D_DEBUG -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/include -std=gnu++20 -arch arm64 -fopenmp=libomp -fopenmp=libomp -o CMakeFiles/muparser.dir/src/muParserInt.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/src/muParserInt.cpp",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/src/muParserInt.cpp",
+  "output": "third_party/muparser/CMakeFiles/muparser.dir/src/muParserInt.cpp.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/muparser",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -DMUPARSER_DLL -DMUPARSER_STATIC -DMUP_USE_OPENMP -D_DEBUG -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/include -std=gnu++20 -arch arm64 -fopenmp=libomp -fopenmp=libomp -o CMakeFiles/muparser.dir/src/muParserTest.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/src/muParserTest.cpp",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/src/muParserTest.cpp",
+  "output": "third_party/muparser/CMakeFiles/muparser.dir/src/muParserTest.cpp.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/muparser",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -DMUPARSER_DLL -DMUPARSER_STATIC -DMUP_USE_OPENMP -D_DEBUG -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/include -std=gnu++20 -arch arm64 -fopenmp=libomp -fopenmp=libomp -o CMakeFiles/muparser.dir/src/muParserTokenReader.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/src/muParserTokenReader.cpp",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/src/muParserTokenReader.cpp",
+  "output": "third_party/muparser/CMakeFiles/muparser.dir/src/muParserTokenReader.cpp.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/muparser",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -DMUPARSER_STATIC -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/include -std=gnu++20 -arch arm64 -fopenmp=libomp -fopenmp=libomp -o CMakeFiles/example1.dir/samples/example1/example1.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/samples/example1/example1.cpp",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/samples/example1/example1.cpp",
+  "output": "third_party/muparser/CMakeFiles/example1.dir/samples/example1/example1.cpp.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/muparser",
+  "command": "/opt/homebrew/opt/llvm/bin/clang -DMUPARSER_STATIC -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/include  -arch arm64 -fopenmp=libomp -o CMakeFiles/example2.dir/samples/example2/example2.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/samples/example2/example2.c",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/samples/example2/example2.c",
+  "output": "third_party/muparser/CMakeFiles/example2.dir/samples/example2/example2.c.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/muparser",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -DMUPARSER_STATIC -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/include -std=gnu++20 -arch arm64 -fopenmp=libomp -fopenmp=libomp -o CMakeFiles/t_ParserTest.dir/test/t_ParserTest.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/test/t_ParserTest.cpp",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/test/t_ParserTest.cpp",
+  "output": "third_party/muparser/CMakeFiles/t_ParserTest.dir/test/t_ParserTest.cpp.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/third_party/imgui",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++  -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/imgui -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/imgui/backends -std=gnu++17 -arch arm64 -o CMakeFiles/imgui.dir/imgui.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/imgui/imgui.cpp",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/imgui/imgui.cpp",
+  "output": "third_party/imgui/CMakeFiles/imgui.dir/imgui.cpp.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/src",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -DMUPARSER_STATIC -I/Users/mwo/Documents/GitHub/C++/Practice/Math/include -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/imgui -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glad -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glm -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/stb -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/include -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/include -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/imgui/backends -I/Users/mwo/Documents/GitHub/C++/Practice/Math -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/System/Library/Frameworks -std=gnu++17 -arch arm64 -fopenmp=libomp -fopenmp=libomp -o CMakeFiles/MyProjectApp.dir/main.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/src/main.cpp",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/src/main.cpp",
+  "output": "src/CMakeFiles/MyProjectApp.dir/main.cpp.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/src",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -DMUPARSER_STATIC -I/Users/mwo/Documents/GitHub/C++/Practice/Math/include -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/imgui -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glad -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glm -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/stb -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/include -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/include -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/imgui/backends -I/Users/mwo/Documents/GitHub/C++/Practice/Math -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/System/Library/Frameworks -std=gnu++17 -arch arm64 -fopenmp=libomp -fopenmp=libomp -o CMakeFiles/MyProjectApp.dir/Application.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/src/Application.cpp",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/src/Application.cpp",
+  "output": "src/CMakeFiles/MyProjectApp.dir/Application.cpp.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/src",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -DMUPARSER_STATIC -I/Users/mwo/Documents/GitHub/C++/Practice/Math/include -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/imgui -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glad -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glm -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/stb -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/include -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/include -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/imgui/backends -I/Users/mwo/Documents/GitHub/C++/Practice/Math -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/System/Library/Frameworks -std=gnu++17 -arch arm64 -fopenmp=libomp -fopenmp=libomp -o CMakeFiles/MyProjectApp.dir/Renderer.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/src/Renderer.cpp",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/src/Renderer.cpp",
+  "output": "src/CMakeFiles/MyProjectApp.dir/Renderer.cpp.o"
+},
+{
+  "directory": "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/src",
+  "command": "/opt/homebrew/opt/llvm/bin/clang++ -DMUPARSER_STATIC -I/Users/mwo/Documents/GitHub/C++/Practice/Math/include -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/imgui -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glad -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glm -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/stb -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/glfw/include -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/muparser/include -I/Users/mwo/Documents/GitHub/C++/Practice/Math/third_party/imgui/backends -I/Users/mwo/Documents/GitHub/C++/Practice/Math -iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/System/Library/Frameworks -std=gnu++17 -arch arm64 -fopenmp=libomp -fopenmp=libomp -o CMakeFiles/MyProjectApp.dir/ImGuiLayer.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/src/ImGuiLayer.cpp",
+  "file": "/Users/mwo/Documents/GitHub/C++/Practice/Math/src/ImGuiLayer.cpp",
+  "output": "src/CMakeFiles/MyProjectApp.dir/ImGuiLayer.cpp.o"
+}
+]

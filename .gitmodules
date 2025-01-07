@@ -7,3 +7,4 @@
 [submodule "third_party/muparser"]
 	path = third_party/muparser
 	url = https://github.com/beltoforion/muparser.git
+
