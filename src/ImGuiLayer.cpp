@@ -1,18 +1,18 @@
 #include "../include/MyProject/ImGuiLayer.hpp"
 
 //Dear ImGui headers
+
+#include <glad/glad.h>
+#include <GLFW/glfw3.h>
 #include <imgui.h>
 #include <imgui_impl_glfw.h>
 #include <imgui_impl_opengl3.h>
-
-#include <GLFW/glfw3.h>
-#include <glad/glad.h>
 
 namespace MyProject {
 
 void ImGuiLayer::Init(GLFWwindow* window)
 {
-    IMGUI_CHECKVERSION();
+    ImGUI_CHECKVERSION();
     ImGUI::CreateContext();
     ImGUI::StyleColorsDark();
 

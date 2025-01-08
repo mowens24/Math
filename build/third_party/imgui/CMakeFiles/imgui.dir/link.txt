@@ -1,2 +1,0 @@
-/usr/bin/ar qc libimgui.a CMakeFiles/imgui.dir/imgui.cpp.o
-/opt/homebrew/opt/llvm/bin/llvm-ranlib libimgui.a

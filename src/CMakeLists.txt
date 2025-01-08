@@ -1,41 +1,43 @@
-# src/CmakeLists.txt
+# src/CMakeLists.txt
+
+# Define source files
 set(SRC_FILES
     main.cpp
     Application.cpp
     Renderer.cpp
     ImGuiLayer.cpp
-    # Add more source files here
+    # test_openmp.cpp  # Include only if present
 )
 
+# Define a static library from source files
+add_library(MyProjectLib STATIC ${SRC_FILES})
 
-add_executable(MyProjectApp ${SRC_FILES})
-
-target_include_directories(MyProjectApp 
-    PRIVATE 
-        ${CMAKE_SOURCE_DIR}/include
-        ${CMAKE_SOURCE_DIR}/third_party
-        ${CMAKE_SOURCE_DIR}/third_party/imgui
-        ${CMAKE_SOURCE_DIR}/third_party/glad
-        ${CMAKE_SOURCE_DIR}/third_party/glfw
-        ${CMAKE_SOURCE_DIR}/third_party/glm
-        ${CMAKE_SOURCE_DIR}/third_party/stb
-        ${CMAKE_SOURCE_DIR}/third_party/muparser/
+# Include directories specific to this library
+target_include_directories(MyProjectLib PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/../include
+    ${CMAKE_CURRENT_SOURCE_DIR}/../third_party/glfw/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/../third_party/glm/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/../third_party/muparser/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/../third_party/imgui
+    ${CMAKE_CURRENT_SOURCE_DIR}/../third_party/glad/include
 )
 
-# Link libraries
-target_link_libraries(MyProjectApp
-    PRIVATE
-        glad
-        glfw
-        muparser        # Link against muparser
-        imgui
-        glm             # Link against the GLM interface library
-        OpenGL::GL
-        # Add other libraries as needed
+# Link libraries to this library
+target_link_libraries(MyProjectLib PUBLIC 
+    glfw
+    glm
+    muparser
+    imgui
+    OpenGL::GL
+    OpenMP::OpenMP_CXX
 )
 
+# Apply OpenMP Settings
+if(OpenMP_CXX_FOUND)
+    target_compile_options(MyProjectLib PUBLIC ${OpenMP_CXX_FLAGS})
+    target_link_libraries(MyProjectLib PUBLIC OpenMP::OpenMP_CXX)
+endif()
 
-# Shaders
-
+# Copy Shaders
 file(COPY ${CMAKE_SOURCE_DIR}/shaders 
     DESTINATION ${CMAKE_BINARY_DIR})

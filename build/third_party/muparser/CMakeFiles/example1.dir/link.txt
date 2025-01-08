@@ -1,1 +1,0 @@
-/opt/homebrew/opt/llvm/bin/clang++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/example1.dir/samples/example1/example1.cpp.o -o example1  libmuparser.a /opt/homebrew/Cellar/llvm/19.1.6/lib/libomp.dylib

@@ -1,14 +1,20 @@
 // Temporary NOTHINNESS
 
+#include "../third_party/glad/include/KHR/khrplatform.h"
+#include "../third_party/glad/include/glad/glad.h"
+#include "../third_party/glfw/include/GLFW/glfw3.h"
+#include "../third_party/glm/glm/glm.hpp"
+#include "../third_party/muparser/include/muParser.h"
+
 #include "../include/MyProject/Application.hpp"
 #include "../include/MyProject/Renderer.hpp"
 #include "../include/MyProject/ImGuiLayer.hpp"
-
-#include <GLFW/glfw3.h>
+/*
 #include <glad/glad.h>
-#include <muParser.h>
+#include <GLFW/glfw3.h>
 #include <glm/glm.hpp>
-
+#include <muParser.h>
+*/
 namespace MyProject {
 
 
@@ -45,7 +51,7 @@ bool Application::Init()
     // }
 
     // Init ImGui
-    imGuiLayer::Init(s_Window);
+    ImGuiLayer::Init(s_Window);
 
     // Init Renderer
     Renderer::Init();
@@ -61,7 +67,7 @@ void Application::Run()
         glfwPollEvents();
 
         // Start ImGui frame
-        ImGuiLayer::BeginFrame();
+        ImGui::BeginFrame();
 
         // Debug window
         ImGui::Begin("Demo"); ImGui::End();
@@ -70,7 +76,7 @@ void Application::Run()
         Renderer::Render();
 
         // End ImGui frame
-        ImGuiLayer::EndFrame();
+        ImGui::EndFrame();
 
         // Swap buffers
         glfwSwapBuffers(s_Window);
@@ -82,7 +88,7 @@ void Application::Shutdown()
 {
     // Cleanup
     Renderer::Shutdown();
-    ImGuiLayer::Shutdown();
+    ImGui::Shutdown();
 
     glfwDestroyWindow(s_Window);
     glfwTerminate();

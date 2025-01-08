@@ -1,0 +1,15 @@
+# Build directories
+build/
+src/CMakeFiles/
+src/CMakeCache.txt
+src/Makefile
+src/cmake_install.cmake
+src/muparser-targets.cmake
+src/muparser.pc
+
+# Other build artifacts
+*.o
+*.obj
+*.so
+*.dylib
+*.exe

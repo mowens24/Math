@@ -1,17 +1,36 @@
-# third_party/imgui/CMakeLists.txt
+cmake_minimum_required(VERSION 3.10)
+project(imgui LANGUAGES CXX)
 
-file(GLOB IMGUI_SOURCES
+set(IMGUI_CORE_SOURCES
     imgui.cpp
     imgui_draw.cpp
     imgui_tables.cpp
     imgui_widgets.cpp
-    backends/imgui_impl_glfw.cpp
-    # if you have it: backends/imgui_impl_opengl3.cpp, etc.
+    imgui_demo.cpp
 )
 
-add_library(imgui STATIC ${IMGUI_SOURCES})
+set(IMGUI_BACKEND_SOURCES
+    backends/imgui_impl_glfw.cpp
+    backends/imgui_impl_opengl3.cpp
+)
 
-target_include_directories(imgui PUBLIC
+add_library(imgui STATIC ${IMGUI_CORE_SOURCES} ${IMGUI_BACKEND_SOURCES})
+
+target_include_directories(imgui PUBLIC 
     ${CMAKE_CURRENT_SOURCE_DIR}
     ${CMAKE_CURRENT_SOURCE_DIR}/backends
+)
+
+target_compile_definitions(imgui PUBLIC 
+    IMGUI_IMPL_OPENGL_LOADER_GLAD
+)
+
+target_compile_features(imgui PUBLIC cxx_std_11)
+
+set_target_properties(imgui PROPERTIES POSITION_INDEPENDENT_CODE ON)
+
+target_link_libraries(imgui PUBLIC 
+    glfw
+    glad
+    OpenGL::GL
 )

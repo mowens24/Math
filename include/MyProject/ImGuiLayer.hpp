@@ -1,26 +1,19 @@
-#pragma once
-    
-//
+// include/MyProject/ImGuiLayer.hpp
 
-struct GLFWwindow;
+#ifndef MYPROJECT_IMGUI_LAYER_HPP
+#define MYPROJECT_IMGUI_LAYER_HPP
 
-namespace MyProject {
+#include <imgui.h>
+#include <imgui_impl_glfw.h>
+#include <imgui_impl_opengl3.h>
+#include <GLFW/glfw3.h> // Required for GLFWwindow
 
-
-class ImGuiLayer 
-{
+class ImGuiLayer {
 public:
-    // Init ImGui (create context, set style, init backends)
-    static void Init(GLFWwindow* window);
-
-    // Start a new ImGui frame
-    static void BeginFrame();
-
-    // Render frame
-    static void EndFrame();
-
-    // Shutdown ImGui (destroy context, shutdown backends)
-    static void Shutdown();
+    void Init(GLFWwindow* window);
+    void Shutdown();
+    void Begin();
+    void End();
 };
 
-} // namespace MyProject
+#endif // MYPROJECT_IMGUI_LAYER_HPP

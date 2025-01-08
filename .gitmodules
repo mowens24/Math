@@ -8,3 +8,6 @@
 	path = third_party/muparser
 	url = https://github.com/beltoforion/muparser.git
 
+[submodule "third_party/third_party/imgui"]
+	path = third_party/third_party/imgui
+	url = https://github.com/ocornut/imgui.git
