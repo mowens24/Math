@@ -33,7 +33,7 @@ set(CMAKE_LINKER_LINK "")
 set(CMAKE_LINKER_LLD "")
 set(CMAKE_CXX_COMPILER_LINKER "/usr/bin/ld")
 set(CMAKE_CXX_COMPILER_LINKER_ID "AppleClang")
-set(CMAKE_CXX_COMPILER_LINKER_VERSION 1053.12)
+set(CMAKE_CXX_COMPILER_LINKER_VERSION 1115.7.3)
 set(CMAKE_CXX_COMPILER_LINKER_FRONTEND_VARIANT GNU)
 set(CMAKE_MT "")
 set(CMAKE_TAPI "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/tapi")
@@ -87,10 +87,10 @@ endif()
 
 
 
-set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/opt/homebrew/Cellar/llvm/19.1.6/include/c++/v1;/opt/homebrew/Cellar/llvm/19.1.6/lib/clang/19/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include")
+set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/opt/homebrew/Cellar/llvm/19.1.6/include/c++/v1;/opt/homebrew/Cellar/llvm/19.1.6/lib/clang/19/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include")
 set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "c++")
-set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/opt/homebrew/opt/llvm/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/lib/swift")
-set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/System/Library/Frameworks")
+set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/opt/homebrew/opt/llvm/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift")
+set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks")
 set(CMAKE_CXX_COMPILER_CLANG_RESOURCE_DIR "/opt/homebrew/Cellar/llvm/19.1.6/lib/clang/19")
 
 set(CMAKE_CXX_COMPILER_IMPORT_STD "")
