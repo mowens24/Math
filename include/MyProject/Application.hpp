@@ -1,5 +1,5 @@
 #pragma once
-
+#include "Renderer.hpp"
 // Forward declare GLFWwindow
 struct GLFWwindow;
 
@@ -18,8 +18,9 @@ public:
     void Shutdown();
 
 private:
-    GLFWwindow* m_Window;      // Pointer is okay with forward declaration
-    ImGuiLayer* m_ImGuiLayer;  // Changed to pointer since we only have forward declaration
+    GLFWwindow* m_Window;      
+    ImGuiLayer* m_ImGuiLayer;
+    Renderer* m_Renderer; 
 };
 
 } // namespace MyProject
