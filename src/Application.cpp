@@ -3,15 +3,40 @@
 #include "../include/MyProject/ImGuiLayer.hpp"
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
+#include <backends/imgui_impl_opengl3.h>
+#include <backends/imgui_impl_glfw.h>
 #include <imgui.h>
 #include <iostream>
-#include <third_party/exprtk.hpp>
+#include "../third_party/exprtk/exprtk.hpp"
 
 /* Forward declaration of EvaluateExpressionStub
 double EvaluateExpressionStub(const char* expression, float x);
 void PlotEquationStub(const char* expression);
 */
 namespace MyProject {
+
+char eqBuffer[256] = "";
+float xVal = 0.0f;
+float lastResult = 0.0f;
+
+double EvaluateEquationExprTk(const char* expression, double x)
+{
+    exprtk::symbol_table<double> symbol_table;
+    symbol_table.add_variable("x", x);
+    symbol_table.add_constants();
+
+    exprtk::expression<double> expr;
+    expr.register_symbol_table(symbol_table);
+
+    exprtk::parser<double> parser;
+    if (!parser.compile(expression, expr))
+    {
+        std::cerr << "Error: " << parser.error() << std::endl;
+        return 0.0;
+    }
+
+    return expr.value();
+}
 
 Application::Application()
     : m_Window(nullptr)
@@ -74,64 +99,53 @@ void Application::Run()
     while (!glfwWindowShouldClose(m_Window)) {
         // Poll events
         glfwPollEvents();
-
-        // Start ImGui frame
+    
+        // 1 ) Start ImGui frame
+        ImGui_ImplOpenGL3_NewFrame();
+        ImGui_ImplGlfw_NewFrame();
+        ImGui::NewFrame();
+        // 2 ) Build ImGui windows
         m_ImGuiLayer->Begin();
-        RenderImGuiUI(); // the function above
-  
+        // Equation window (input and compute)
+        ImGui::Begin("Equation Window");
 
-        // End ImGui
-        m_ImGuiLayer->End();
-
-        // Clear screen
-        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
-        // Render with our renderer
-        m_Renderer->Render();
-
-        // Swap buffers
-        glfwSwapBuffers(m_Window);
-    }
-}
-
-// In Application::Run() or some "RenderImGui" function:
-void Application::RenderImGuiUI()
-{
-    // Equation Panel
-    ImGui::Begin("Equation");
-        static char eqBuf[128] = "x^2 + 3";
-        ImGui::InputText("Equation", eqBuf, IM_ARRAYSIZE(eqBuf));
-
-        static float xVal = 0.0f;
-        ImGui::SliderFloat("x", &xVal, -10.0f, 10.0f);
+        ImGui::InputText("Equation", eqBuffer, IM_ARRAYSIZE(eqBuffer));
+        ImGui::SliderFloat("x", &xVal, -10.f, 10.f);
 
         if (ImGui::Button("Compute"))
         {
-            double res = EvaluateExpressionStub(eqBuf, xVal);
-            std::cout << "Compute pressed. eq=" << eqBuf << ", x=" << xVal 
-                      << ", result=" << res << std::endl;
+            // === Use ExprTk to evaluate eqBuffer at xVal ===
+            double result = EvaluateEquationExprTk(eqBuffer, (double)xVal);
+            lastResult = (float)result; // store for display
+
+            // Also log it
+            std::cout << "[Compute] eq='" << eqBuffer
+                    << "', x=" << xVal
+                    << " => result=" << result << std::endl;
         }
 
         ImGui::SameLine();
+        ImGui::Text("Result: %.3f", lastResult);
+        
+        ImGui::End(); // Equation End()
 
-        if (ImGui::Button("Plot"))
-        {
-            std::cout << "Plot pressed. eq=" << eqBuf << std::endl;
-            PlotEquationStub(eqBuf);
-        }
-    ImGui::End(); // End Equation
 
-    // Graph Settings Panel
-    ImGui::Begin("Graph Settings");
+        // Graph Settings Panel
+        ImGui::Begin("Graph Settings");
         static float xMin = -10.0f, xMax = 10.0f;
         static int steps = 100;
-
         ImGui::SliderFloat("X Min", &xMin, -100.0f, 0.0f);
         ImGui::SliderFloat("X Max", &xMax, 0.0f, 100.0f);
         ImGui::SliderInt("Steps", &steps, 1, 1000);
-    ImGui::End(); // End Graph Settings
+        ImGui::End(); // End Graph Settings
+        // Render
+        ImGui::Render();
+        ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+        // End frame
+        m_ImGuiLayer->End();
+        glfwSwapBuffers(m_Window);
+        }
 }
-
 
 void Application::Shutdown()
 {

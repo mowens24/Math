@@ -15,8 +15,6 @@ void ImGuiLayer::Init(GLFWwindow* window) {
     ImGui::CreateContext();
     ImGui::StyleColorsDark();
     
-    // Style
-    ImGui::StyleColorsDark();
 
     // Platform renderer backends
     // GLFW + OpenGL3
