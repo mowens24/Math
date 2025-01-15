@@ -11,3 +11,6 @@
 [submodule "third_party/third_party/imgui"]
 	path = third_party/third_party/imgui
 	url = https://github.com/ocornut/imgui.git
+[submodule "third_party/exprtk"]
+	path = third_party/exprtk
+	url = https://github.com/ArashPartow/exprtk.git

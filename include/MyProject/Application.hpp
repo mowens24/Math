@@ -16,7 +16,7 @@ public:
     bool Init();
     void Run();
     void Shutdown();
-
+    void RenderImGuiUI();
 private:
     GLFWwindow* m_Window;      
     ImGuiLayer* m_ImGuiLayer;
