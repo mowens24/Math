@@ -5,6 +5,7 @@
 
 namespace MyProject {
 
+// Utility to load file into a string
 static std::string LoadShaderFile(const std::string& path)
 {
     std::ifstream file(path);
@@ -16,7 +17,7 @@ static std::string LoadShaderFile(const std::string& path)
     ss << file.rdbuf();
     return ss.str();
 }
-
+// Utility to compile a single shader
 static GLuint CompileShader(GLenum type, const std::string& source)
 {
     GLuint shader = glCreateShader(type);
@@ -42,6 +43,8 @@ static GLuint CompileShader(GLenum type, const std::string& source)
 Renderer::Renderer()
     : m_ShaderProgram(0), m_VAO(0), m_VBO(0), m_EBO(0)
 {
+    // Constructor is empty or just logs something.
+    // No OpenGL calls here!
 }
 
 Renderer::~Renderer()
@@ -52,8 +55,8 @@ Renderer::~Renderer()
 void Renderer::Init()
 {
     // 1) Create/compile/link a shader program
-    m_ShaderProgram = CreateShaderProgram("shaders/vertex_shader.glsl",
-                                          "shaders/fragment_shader.glsl");
+    m_ShaderProgram = CreateShaderProgram("../shaders/vertex_shader.glsl",
+                                          "../shaders/fragment_shader.glsl");
     if (!m_ShaderProgram) {
         std::cerr << "Renderer::Init() - Failed to create shader program!\n";
         return;
@@ -63,14 +66,15 @@ void Renderer::Init()
     glGenVertexArrays(1, &m_VAO);
     glBindVertexArray(m_VAO);
 
+    // 3) Generate buffers
     glGenBuffers(1, &m_VBO);
     glGenBuffers(1, &m_EBO);
-
-    // 3) Example data
+    
+    // 4) Simple triangle data
     float vertices[] = {
-         0.0f,  0.5f, 0.0f,
-         0.5f, -0.5f, 0.0f,
-        -0.5f, -0.5f, 0.0f
+         0.0f,  0.5f, 0.0f, // top
+         0.5f, -0.5f, 0.0f, // bottom-right
+        -0.5f, -0.5f, 0.0f  // bottom-left
     };
     glBindBuffer(GL_ARRAY_BUFFER, m_VBO);
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
@@ -98,7 +102,8 @@ void Renderer::Render()
 
     // Draw
     glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_INT, 0);
-
+    
+    // Unbind
     glBindVertexArray(0);
 }
 
@@ -122,14 +127,15 @@ void Renderer::Shutdown()
     }
 }
 
-GLuint Renderer::CreateShaderProgram(const std::string& vertexPath,
-                                     const std::string& fragmentPath)
+GLuint Renderer::CreateShaderProgram(const std::string& vertPath,
+                                     const std::string& fragPath)
 {
-    std::string vertSource = LoadShaderFile(vertexPath);
-    std::string fragSource = LoadShaderFile(fragmentPath);
+    std::string vertSource = LoadShaderFile(vertPath);
+    std::string fragSource = LoadShaderFile(fragPath);
     if (vertSource.empty() || fragSource.empty())
         return 0;
 
+    // Compile shaders
     GLuint vert = CompileShader(GL_VERTEX_SHADER,   vertSource);
     if (!vert) return 0;
 

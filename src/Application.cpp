@@ -4,6 +4,7 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <imgui.h>
+#include <iostream>
 
 namespace MyProject {
 
@@ -37,6 +38,7 @@ bool Application::Init()
     // 3) Create window
     m_Window = glfwCreateWindow(1280, 720, "MyProject", nullptr, nullptr);
     if (!m_Window) {
+        std::cerr << "Failed to create GLFW window." << std::endl;
         glfwTerminate();
         return false;
     }
@@ -46,9 +48,12 @@ bool Application::Init()
 
     // 5) Load GL with GLAD
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
+        std::cerr << "Failed to initialize GLAD." << std::endl;
         return false;
     }
-
+    // For testing, set a clear color so we don't see just black
+    glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+    
     // 6) Setup ImGui
     m_ImGuiLayer->Init(m_Window);
 
@@ -60,16 +65,19 @@ bool Application::Init()
 
 void Application::Run()
 {
+    // Main loop
     while (!glfwWindowShouldClose(m_Window)) {
+        // Poll events
         glfwPollEvents();
 
-        // Start ImGui
+        // Start ImGui frame
         m_ImGuiLayer->Begin();
-
-        // (Debug UI example)
-        ImGui::Begin("Demo");
-        ImGui::Text("Hello from ImGui!");
-        ImGui::End();
+        {
+            // (Debug UI example)
+            ImGui::Begin("Demo");
+            ImGui::Text("Hello from ImGui!");
+            ImGui::End();
+        }
 
         // Render ImGui
         ImGui::Render();
@@ -92,8 +100,13 @@ void Application::Shutdown()
 {
     // Cleanup
     m_Renderer->Shutdown();
-    m_ImGuiLayer->Shutdown();
+    delete m_Renderer;
+    m_Renderer = nullptr;
 
+    m_ImGuiLayer->Shutdown();
+    delete m_ImGuiLayer;
+    m_ImGuiLayer = nullptr;
+    
     glfwDestroyWindow(m_Window);
     glfwTerminate();
 }
