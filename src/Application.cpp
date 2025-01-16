@@ -100,35 +100,31 @@ void Application::Run()
         // Poll events
         glfwPollEvents();
     
-        // 1 ) Start ImGui frame
-        ImGui_ImplOpenGL3_NewFrame();
-        ImGui_ImplGlfw_NewFrame();
-        ImGui::NewFrame();
-        // 2 ) Build ImGui windows
+        // 1) Start ImGui frame
         m_ImGuiLayer->Begin();
-        // Equation window (input and compute)
-        ImGui::Begin("Equation Window");
+    
+        // 2) Build ImGui windows
 
+        // Equation Window
+        ImGui::Begin("Equation Window");
         ImGui::InputText("Equation", eqBuffer, IM_ARRAYSIZE(eqBuffer));
         ImGui::SliderFloat("x", &xVal, -10.f, 10.f);
 
         if (ImGui::Button("Compute"))
         {
-            // === Use ExprTk to evaluate eqBuffer at xVal ===
-            double result = EvaluateEquationExprTk(eqBuffer, (double)xVal);
-            lastResult = (float)result; // store for display
+            // Use ExprTk to evaluate eqBuffer at xVal
+            double result = EvaluateEquationExprTk(eqBuffer, static_cast<double>(xVal));
+            lastResult = static_cast<float>(result); // store for display
 
             // Also log it
             std::cout << "[Compute] eq='" << eqBuffer
-                    << "', x=" << xVal
-                    << " => result=" << result << std::endl;
+                      << "', x=" << xVal
+                      << " => result=" << result << std::endl;
         }
 
         ImGui::SameLine();
         ImGui::Text("Result: %.3f", lastResult);
-        
-        ImGui::End(); // Equation End()
-
+        ImGui::End(); // End Equation Window
 
         // Graph Settings Panel
         ImGui::Begin("Graph Settings");
@@ -138,14 +134,15 @@ void Application::Run()
         ImGui::SliderFloat("X Max", &xMax, 0.0f, 100.0f);
         ImGui::SliderInt("Steps", &steps, 1, 1000);
         ImGui::End(); // End Graph Settings
-        // Render
-        ImGui::Render();
-        ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
-        // End frame
+
+        // 3) Render and End frame
         m_ImGuiLayer->End();
+    
+        // 4) Swap buffers
         glfwSwapBuffers(m_Window);
-        }
+    }
 }
+
 
 void Application::Shutdown()
 {
