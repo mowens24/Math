@@ -1,7 +1,7 @@
 #pragma once
 
 #include <string>
-// You can include <glad/glad.h> here if you like:
+// You can include <glad/glad.h> here if you like
 #include <glad/glad.h>
 
 namespace MyProject {

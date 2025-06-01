@@ -1093,3 +1093,1406 @@ events:
       LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
       TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.9)
 ...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Darwin - 24.0.0 - arm64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/clang 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is AppleClang, found in:
+        /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/3.31.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/clang++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is AppleClang, found in:
+        /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/3.31.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-QcaiZi"
+      binary: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-QcaiZi"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/llvm/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-QcaiZi'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_2a1cc
+        [1/2] /usr/bin/clang   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0   -v -Wl,-v -MD -MT CMakeFiles/cmTC_2a1cc.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_2a1cc.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_2a1cc.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+        Apple clang version 16.0.0 (clang-1600.0.26.6)
+        Target: arm64-apple-darwin24.0.0
+        Thread model: posix
+        InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+        clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.2 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-QcaiZi -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_2a1cc.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_2a1cc.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdebug-compilation-dir=/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-QcaiZi -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_2a1cc.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 16.0.0 (clang-1600.0.26.6) default target arm64-apple-darwin24.0.0
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include"
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        [2/2] : && /usr/bin/clang -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/opt/homebrew/opt/llvm/lib -v -Wl,-v CMakeFiles/cmTC_2a1cc.dir/CMakeCCompilerABI.c.o -o cmTC_2a1cc   && :
+        Apple clang version 16.0.0 (clang-1600.0.26.6)
+        Target: arm64-apple-darwin24.0.0
+        Thread model: posix
+        InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.2 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_2a1cc -L/opt/homebrew/opt/llvm/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_2a1cc.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld PROJECT:ld-1115.7.3
+        BUILD 23:52:02 Dec  5 2024
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+        will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
+        LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
+        TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.9)
+        Library search paths:
+        	/opt/homebrew/opt/llvm/lib
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift
+        Framework search paths:
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:113 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Effective list of requested architectures (possibly empty)  : ""
+      Effective list of architectures found in the ABI info binary: "arm64"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include]
+          add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include]
+          add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        end of search list found
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        implicit include dirs: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-QcaiZi']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_2a1cc]
+        ignore line: [[1/2] /usr/bin/clang   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0   -v -Wl -v -MD -MT CMakeFiles/cmTC_2a1cc.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_2a1cc.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_2a1cc.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.6)]
+        ignore line: [Target: arm64-apple-darwin24.0.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+        ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.2 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-QcaiZi -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_2a1cc.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_2a1cc.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdebug-compilation-dir=/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-QcaiZi -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_2a1cc.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 16.0.0 (clang-1600.0.26.6) default target arm64-apple-darwin24.0.0]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [End of search list.]
+        ignore line: [[2/2] : && /usr/bin/clang -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -Wl -search_paths_first -Wl -headerpad_max_install_names -L/opt/homebrew/opt/llvm/lib -v -Wl -v CMakeFiles/cmTC_2a1cc.dir/CMakeCCompilerABI.c.o -o cmTC_2a1cc   && :]
+        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.6)]
+        ignore line: [Target: arm64-apple-darwin24.0.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.2 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_2a1cc -L/opt/homebrew/opt/llvm/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_2a1cc.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-lto_library] ==> ignore, skip following value
+          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-platform_version] ==> ignore
+          arg [macos] ==> ignore
+          arg [15.0.0] ==> ignore
+          arg [15.2] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk] ==> ignore
+          arg [-mllvm] ==> ignore
+          arg [-enable-linkonceodr-outlining] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_2a1cc] ==> ignore
+          arg [-L/opt/homebrew/opt/llvm/lib] ==> dir [/opt/homebrew/opt/llvm/lib]
+          arg [-search_paths_first] ==> ignore
+          arg [-headerpad_max_install_names] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_2a1cc.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lSystem] ==> lib [System]
+          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+        linker tool for 'C': /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
+        Library search paths: [;/opt/homebrew/opt/llvm/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift]
+        Framework search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks]
+        remove lib [System]
+        remove lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+        collapse library dir [/opt/homebrew/opt/llvm/lib] ==> [/opt/homebrew/opt/llvm/lib]
+        collapse library dir [/opt/homebrew/opt/llvm/lib] ==> [/opt/homebrew/opt/llvm/lib]
+        collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib]
+        collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift]
+        collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks]
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: [/opt/homebrew/opt/llvm/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift]
+        implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" "-v"
+      @(#)PROGRAM:ld PROJECT:ld-1115.7.3
+      BUILD 23:52:02 Dec  5 2024
+      configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+      will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
+      LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
+      TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.9)
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-c9MnRe"
+      binary: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-c9MnRe"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/llvm/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-c9MnRe'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_3a9e2
+        [1/2] /usr/bin/clang++   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0   -v -Wl,-v -MD -MT CMakeFiles/cmTC_3a9e2.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_3a9e2.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_3a9e2.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Apple clang version 16.0.0 (clang-1600.0.26.6)
+        Target: arm64-apple-darwin24.0.0
+        Thread model: posix
+        InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+        clang++: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.2 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-c9MnRe -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_3a9e2.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_3a9e2.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-c9MnRe -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_3a9e2.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 16.0.0 (clang-1600.0.26.6) default target arm64-apple-darwin24.0.0
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include"
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        [2/2] : && /usr/bin/clang++ -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/opt/homebrew/opt/llvm/lib -v -Wl,-v CMakeFiles/cmTC_3a9e2.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_3a9e2   && :
+        Apple clang version 16.0.0 (clang-1600.0.26.6)
+        Target: arm64-apple-darwin24.0.0
+        Thread model: posix
+        InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.2 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_3a9e2 -L/opt/homebrew/opt/llvm/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_3a9e2.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld PROJECT:ld-1115.7.3
+        BUILD 23:52:02 Dec  5 2024
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+        will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
+        LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
+        TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.9)
+        Library search paths:
+        	/opt/homebrew/opt/llvm/lib
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift
+        Framework search paths:
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:113 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Effective list of requested architectures (possibly empty)  : ""
+      Effective list of architectures found in the ABI info binary: "arm64"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1]
+          add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include]
+          add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include]
+          add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        end of search list found
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        implicit include dirs: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-c9MnRe']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_3a9e2]
+        ignore line: [[1/2] /usr/bin/clang++   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0   -v -Wl -v -MD -MT CMakeFiles/cmTC_3a9e2.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_3a9e2.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_3a9e2.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.6)]
+        ignore line: [Target: arm64-apple-darwin24.0.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+        ignore line: [clang++: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"]
+        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.2 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-c9MnRe -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_3a9e2.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_3a9e2.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-c9MnRe -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_3a9e2.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 16.0.0 (clang-1600.0.26.6) default target arm64-apple-darwin24.0.0]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [End of search list.]
+        ignore line: [[2/2] : && /usr/bin/clang++ -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -Wl -search_paths_first -Wl -headerpad_max_install_names -L/opt/homebrew/opt/llvm/lib -v -Wl -v CMakeFiles/cmTC_3a9e2.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_3a9e2   && :]
+        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.6)]
+        ignore line: [Target: arm64-apple-darwin24.0.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.2 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_3a9e2 -L/opt/homebrew/opt/llvm/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_3a9e2.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-lto_library] ==> ignore, skip following value
+          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-platform_version] ==> ignore
+          arg [macos] ==> ignore
+          arg [15.0.0] ==> ignore
+          arg [15.2] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk] ==> ignore
+          arg [-mllvm] ==> ignore
+          arg [-enable-linkonceodr-outlining] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_3a9e2] ==> ignore
+          arg [-L/opt/homebrew/opt/llvm/lib] ==> dir [/opt/homebrew/opt/llvm/lib]
+          arg [-search_paths_first] ==> ignore
+          arg [-headerpad_max_install_names] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_3a9e2.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lc++] ==> lib [c++]
+          arg [-lSystem] ==> lib [System]
+          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+        linker tool for 'CXX': /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
+        Library search paths: [;/opt/homebrew/opt/llvm/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift]
+        Framework search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks]
+        remove lib [System]
+        remove lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+        collapse library dir [/opt/homebrew/opt/llvm/lib] ==> [/opt/homebrew/opt/llvm/lib]
+        collapse library dir [/opt/homebrew/opt/llvm/lib] ==> [/opt/homebrew/opt/llvm/lib]
+        collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib]
+        collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift]
+        collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks]
+        implicit libs: [c++]
+        implicit objs: []
+        implicit dirs: [/opt/homebrew/opt/llvm/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/lib/swift]
+        implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" "-v"
+      @(#)PROGRAM:ld PROJECT:ld-1115.7.3
+      BUILD 23:52:02 Dec  5 2024
+      configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+      will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
+      LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
+      TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.9)
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:252 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-Jp8olW"
+      binary: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-Jp8olW"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/llvm/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-Jp8olW'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_6a9c4
+        [1/2] /usr/bin/clang   -Xclang -fopenmp -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -MD -MT CMakeFiles/cmTC_6a9c4.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_6a9c4.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_6a9c4.dir/OpenMPTryFlag.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-Jp8olW/OpenMPTryFlag.c
+        FAILED: CMakeFiles/cmTC_6a9c4.dir/OpenMPTryFlag.c.o 
+        /usr/bin/clang   -Xclang -fopenmp -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -MD -MT CMakeFiles/cmTC_6a9c4.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_6a9c4.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_6a9c4.dir/OpenMPTryFlag.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-Jp8olW/OpenMPTryFlag.c
+        /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-Jp8olW/OpenMPTryFlag.c:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:354 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "Trying C OpenMP compiler with '/opt/homebrew/opt/llvm/lib/libomp.dylib'"
+    directories:
+      source: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-vYhyzY"
+      binary: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-vYhyzY"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/llvm/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-vYhyzY'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_f7587
+        [1/2] /usr/bin/clang   -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0   -Xclang -fopenmp -MD -MT CMakeFiles/cmTC_f7587.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_f7587.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_f7587.dir/OpenMPTryFlag.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-vYhyzY/OpenMPTryFlag.c
+        FAILED: CMakeFiles/cmTC_f7587.dir/OpenMPTryFlag.c.o 
+        /usr/bin/clang   -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0   -Xclang -fopenmp -MD -MT CMakeFiles/cmTC_f7587.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_f7587.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_f7587.dir/OpenMPTryFlag.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-vYhyzY/OpenMPTryFlag.c
+        /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-vYhyzY/OpenMPTryFlag.c:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:252 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-2ZqqGA"
+      binary: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-2ZqqGA"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/llvm/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-2ZqqGA'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_6da4a
+        [1/2] /usr/bin/clang++   -Xclang -fopenmp -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -MD -MT CMakeFiles/cmTC_6da4a.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_6da4a.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_6da4a.dir/OpenMPTryFlag.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-2ZqqGA/OpenMPTryFlag.cpp
+        FAILED: CMakeFiles/cmTC_6da4a.dir/OpenMPTryFlag.cpp.o 
+        /usr/bin/clang++   -Xclang -fopenmp -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -MD -MT CMakeFiles/cmTC_6da4a.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_6da4a.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_6da4a.dir/OpenMPTryFlag.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-2ZqqGA/OpenMPTryFlag.cpp
+        /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-2ZqqGA/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:354 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "Trying CXX OpenMP compiler with '/opt/homebrew/opt/llvm/lib/libomp.dylib'"
+    directories:
+      source: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-WtOnSj"
+      binary: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-WtOnSj"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/llvm/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-WtOnSj'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_4a434
+        [1/2] /usr/bin/clang++   -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0   -Xclang -fopenmp -MD -MT CMakeFiles/cmTC_4a434.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_4a434.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_4a434.dir/OpenMPTryFlag.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-WtOnSj/OpenMPTryFlag.cpp
+        FAILED: CMakeFiles/cmTC_4a434.dir/OpenMPTryFlag.cpp.o 
+        /usr/bin/clang++   -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0   -Xclang -fopenmp -MD -MT CMakeFiles/cmTC_4a434.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_4a434.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_4a434.dir/OpenMPTryFlag.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-WtOnSj/OpenMPTryFlag.cpp
+        /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-WtOnSj/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:252 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "/Users/mwo/Documents/github/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-9KBb6c"
+      binary: "/Users/mwo/Documents/github/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-9KBb6c"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/llvm/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mwo/Documents/github/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-9KBb6c'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_bf125
+        [1/2] /usr/bin/clang   -Xclang -fopenmp -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -MD -MT CMakeFiles/cmTC_bf125.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_bf125.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_bf125.dir/OpenMPTryFlag.c.o -c /Users/mwo/Documents/github/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-9KBb6c/OpenMPTryFlag.c
+        FAILED: CMakeFiles/cmTC_bf125.dir/OpenMPTryFlag.c.o 
+        /usr/bin/clang   -Xclang -fopenmp -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -MD -MT CMakeFiles/cmTC_bf125.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_bf125.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_bf125.dir/OpenMPTryFlag.c.o -c /Users/mwo/Documents/github/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-9KBb6c/OpenMPTryFlag.c
+        /Users/mwo/Documents/github/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-9KBb6c/OpenMPTryFlag.c:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:354 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "Trying C OpenMP compiler with '/opt/homebrew/opt/llvm/lib/libomp.dylib'"
+    directories:
+      source: "/Users/mwo/Documents/github/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-xXVYAp"
+      binary: "/Users/mwo/Documents/github/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-xXVYAp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/llvm/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mwo/Documents/github/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-xXVYAp'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_64b8b
+        [1/2] /usr/bin/clang   -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0   -Xclang -fopenmp -MD -MT CMakeFiles/cmTC_64b8b.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_64b8b.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_64b8b.dir/OpenMPTryFlag.c.o -c /Users/mwo/Documents/github/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-xXVYAp/OpenMPTryFlag.c
+        FAILED: CMakeFiles/cmTC_64b8b.dir/OpenMPTryFlag.c.o 
+        /usr/bin/clang   -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0   -Xclang -fopenmp -MD -MT CMakeFiles/cmTC_64b8b.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_64b8b.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_64b8b.dir/OpenMPTryFlag.c.o -c /Users/mwo/Documents/github/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-xXVYAp/OpenMPTryFlag.c
+        /Users/mwo/Documents/github/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-xXVYAp/OpenMPTryFlag.c:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:252 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "/Users/mwo/Documents/github/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-YLrXlT"
+      binary: "/Users/mwo/Documents/github/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-YLrXlT"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/llvm/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mwo/Documents/github/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-YLrXlT'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_69980
+        [1/2] /usr/bin/clang++   -Xclang -fopenmp -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -MD -MT CMakeFiles/cmTC_69980.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_69980.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_69980.dir/OpenMPTryFlag.cpp.o -c /Users/mwo/Documents/github/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-YLrXlT/OpenMPTryFlag.cpp
+        FAILED: CMakeFiles/cmTC_69980.dir/OpenMPTryFlag.cpp.o 
+        /usr/bin/clang++   -Xclang -fopenmp -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -MD -MT CMakeFiles/cmTC_69980.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_69980.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_69980.dir/OpenMPTryFlag.cpp.o -c /Users/mwo/Documents/github/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-YLrXlT/OpenMPTryFlag.cpp
+        /Users/mwo/Documents/github/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-YLrXlT/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:354 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "Trying CXX OpenMP compiler with '/opt/homebrew/opt/llvm/lib/libomp.dylib'"
+    directories:
+      source: "/Users/mwo/Documents/github/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-9rZUzz"
+      binary: "/Users/mwo/Documents/github/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-9rZUzz"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/llvm/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mwo/Documents/github/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-9rZUzz'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_64add
+        [1/2] /usr/bin/clang++   -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0   -Xclang -fopenmp -MD -MT CMakeFiles/cmTC_64add.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_64add.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_64add.dir/OpenMPTryFlag.cpp.o -c /Users/mwo/Documents/github/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-9rZUzz/OpenMPTryFlag.cpp
+        FAILED: CMakeFiles/cmTC_64add.dir/OpenMPTryFlag.cpp.o 
+        /usr/bin/clang++   -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0   -Xclang -fopenmp -MD -MT CMakeFiles/cmTC_64add.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_64add.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_64add.dir/OpenMPTryFlag.cpp.o -c /Users/mwo/Documents/github/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-9rZUzz/OpenMPTryFlag.cpp
+        /Users/mwo/Documents/github/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-9rZUzz/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:252 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-aha7Fe"
+      binary: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-aha7Fe"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/llvm/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-aha7Fe'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_6f59d
+        [1/2] /usr/bin/clang   -Xclang -fopenmp -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -MD -MT CMakeFiles/cmTC_6f59d.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_6f59d.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_6f59d.dir/OpenMPTryFlag.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-aha7Fe/OpenMPTryFlag.c
+        FAILED: CMakeFiles/cmTC_6f59d.dir/OpenMPTryFlag.c.o 
+        /usr/bin/clang   -Xclang -fopenmp -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -MD -MT CMakeFiles/cmTC_6f59d.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_6f59d.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_6f59d.dir/OpenMPTryFlag.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-aha7Fe/OpenMPTryFlag.c
+        /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-aha7Fe/OpenMPTryFlag.c:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:354 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "Trying C OpenMP compiler with '/opt/homebrew/opt/llvm/lib/libomp.dylib'"
+    directories:
+      source: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-Pycvj1"
+      binary: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-Pycvj1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/llvm/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-Pycvj1'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_5e464
+        [1/2] /usr/bin/clang   -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0   -Xclang -fopenmp -MD -MT CMakeFiles/cmTC_5e464.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_5e464.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_5e464.dir/OpenMPTryFlag.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-Pycvj1/OpenMPTryFlag.c
+        FAILED: CMakeFiles/cmTC_5e464.dir/OpenMPTryFlag.c.o 
+        /usr/bin/clang   -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0   -Xclang -fopenmp -MD -MT CMakeFiles/cmTC_5e464.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_5e464.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_5e464.dir/OpenMPTryFlag.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-Pycvj1/OpenMPTryFlag.c
+        /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-Pycvj1/OpenMPTryFlag.c:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:252 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-LLGeta"
+      binary: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-LLGeta"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/llvm/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-LLGeta'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_f2f67
+        [1/2] /usr/bin/clang++   -Xclang -fopenmp -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -MD -MT CMakeFiles/cmTC_f2f67.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_f2f67.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_f2f67.dir/OpenMPTryFlag.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-LLGeta/OpenMPTryFlag.cpp
+        FAILED: CMakeFiles/cmTC_f2f67.dir/OpenMPTryFlag.cpp.o 
+        /usr/bin/clang++   -Xclang -fopenmp -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -MD -MT CMakeFiles/cmTC_f2f67.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_f2f67.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_f2f67.dir/OpenMPTryFlag.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-LLGeta/OpenMPTryFlag.cpp
+        /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-LLGeta/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:354 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "Trying CXX OpenMP compiler with '/opt/homebrew/opt/llvm/lib/libomp.dylib'"
+    directories:
+      source: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-KI5QRm"
+      binary: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-KI5QRm"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/llvm/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-KI5QRm'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_18394
+        [1/2] /usr/bin/clang++   -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0   -Xclang -fopenmp -MD -MT CMakeFiles/cmTC_18394.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_18394.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_18394.dir/OpenMPTryFlag.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-KI5QRm/OpenMPTryFlag.cpp
+        FAILED: CMakeFiles/cmTC_18394.dir/OpenMPTryFlag.cpp.o 
+        /usr/bin/clang++   -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0   -Xclang -fopenmp -MD -MT CMakeFiles/cmTC_18394.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_18394.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_18394.dir/OpenMPTryFlag.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-KI5QRm/OpenMPTryFlag.cpp
+        /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-KI5QRm/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:252 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-XJtWIr"
+      binary: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-XJtWIr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/llvm/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-XJtWIr'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_e342b
+        [1/2] /usr/bin/clang   -Xclang -fopenmp -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -MD -MT CMakeFiles/cmTC_e342b.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_e342b.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_e342b.dir/OpenMPTryFlag.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-XJtWIr/OpenMPTryFlag.c
+        FAILED: CMakeFiles/cmTC_e342b.dir/OpenMPTryFlag.c.o 
+        /usr/bin/clang   -Xclang -fopenmp -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -MD -MT CMakeFiles/cmTC_e342b.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_e342b.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_e342b.dir/OpenMPTryFlag.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-XJtWIr/OpenMPTryFlag.c
+        /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-XJtWIr/OpenMPTryFlag.c:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:354 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "Trying C OpenMP compiler with '/opt/homebrew/opt/llvm/lib/libomp.dylib'"
+    directories:
+      source: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-cCX0qy"
+      binary: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-cCX0qy"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/llvm/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-cCX0qy'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_f951a
+        [1/2] /usr/bin/clang   -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0   -Xclang -fopenmp -MD -MT CMakeFiles/cmTC_f951a.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_f951a.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_f951a.dir/OpenMPTryFlag.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-cCX0qy/OpenMPTryFlag.c
+        FAILED: CMakeFiles/cmTC_f951a.dir/OpenMPTryFlag.c.o 
+        /usr/bin/clang   -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0   -Xclang -fopenmp -MD -MT CMakeFiles/cmTC_f951a.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_f951a.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_f951a.dir/OpenMPTryFlag.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-cCX0qy/OpenMPTryFlag.c
+        /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-cCX0qy/OpenMPTryFlag.c:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:252 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-tqNO08"
+      binary: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-tqNO08"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/llvm/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-tqNO08'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_b7853
+        [1/2] /usr/bin/clang++   -Xclang -fopenmp -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -MD -MT CMakeFiles/cmTC_b7853.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_b7853.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_b7853.dir/OpenMPTryFlag.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-tqNO08/OpenMPTryFlag.cpp
+        FAILED: CMakeFiles/cmTC_b7853.dir/OpenMPTryFlag.cpp.o 
+        /usr/bin/clang++   -Xclang -fopenmp -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -MD -MT CMakeFiles/cmTC_b7853.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_b7853.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_b7853.dir/OpenMPTryFlag.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-tqNO08/OpenMPTryFlag.cpp
+        /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-tqNO08/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:354 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "Trying CXX OpenMP compiler with '/opt/homebrew/opt/llvm/lib/libomp.dylib'"
+    directories:
+      source: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-O7bX0c"
+      binary: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-O7bX0c"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/llvm/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-O7bX0c'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_e6d67
+        [1/2] /usr/bin/clang++   -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0   -Xclang -fopenmp -MD -MT CMakeFiles/cmTC_e6d67.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_e6d67.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_e6d67.dir/OpenMPTryFlag.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-O7bX0c/OpenMPTryFlag.cpp
+        FAILED: CMakeFiles/cmTC_e6d67.dir/OpenMPTryFlag.cpp.o 
+        /usr/bin/clang++   -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0   -Xclang -fopenmp -MD -MT CMakeFiles/cmTC_e6d67.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_e6d67.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_e6d67.dir/OpenMPTryFlag.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-O7bX0c/OpenMPTryFlag.cpp
+        /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-O7bX0c/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:252 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-co734B"
+      binary: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-co734B"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/llvm/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-co734B'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_a54c9
+        [1/2] /usr/bin/clang   -Xclang -fopenmp -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -MD -MT CMakeFiles/cmTC_a54c9.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_a54c9.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_a54c9.dir/OpenMPTryFlag.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-co734B/OpenMPTryFlag.c
+        FAILED: CMakeFiles/cmTC_a54c9.dir/OpenMPTryFlag.c.o 
+        /usr/bin/clang   -Xclang -fopenmp -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -MD -MT CMakeFiles/cmTC_a54c9.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_a54c9.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_a54c9.dir/OpenMPTryFlag.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-co734B/OpenMPTryFlag.c
+        /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-co734B/OpenMPTryFlag.c:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:354 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "Trying C OpenMP compiler with '/opt/homebrew/opt/llvm/lib/libomp.dylib'"
+    directories:
+      source: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-blgEfd"
+      binary: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-blgEfd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/llvm/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-blgEfd'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_12a39
+        [1/2] /usr/bin/clang   -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0   -Xclang -fopenmp -MD -MT CMakeFiles/cmTC_12a39.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_12a39.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_12a39.dir/OpenMPTryFlag.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-blgEfd/OpenMPTryFlag.c
+        FAILED: CMakeFiles/cmTC_12a39.dir/OpenMPTryFlag.c.o 
+        /usr/bin/clang   -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0   -Xclang -fopenmp -MD -MT CMakeFiles/cmTC_12a39.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_12a39.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_12a39.dir/OpenMPTryFlag.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-blgEfd/OpenMPTryFlag.c
+        /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-blgEfd/OpenMPTryFlag.c:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:252 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-7iJh91"
+      binary: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-7iJh91"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/llvm/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-7iJh91'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_0bd5c
+        [1/2] /usr/bin/clang++   -Xclang -fopenmp -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -MD -MT CMakeFiles/cmTC_0bd5c.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_0bd5c.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_0bd5c.dir/OpenMPTryFlag.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-7iJh91/OpenMPTryFlag.cpp
+        FAILED: CMakeFiles/cmTC_0bd5c.dir/OpenMPTryFlag.cpp.o 
+        /usr/bin/clang++   -Xclang -fopenmp -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -MD -MT CMakeFiles/cmTC_0bd5c.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_0bd5c.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_0bd5c.dir/OpenMPTryFlag.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-7iJh91/OpenMPTryFlag.cpp
+        /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-7iJh91/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:354 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "Trying CXX OpenMP compiler with '/opt/homebrew/opt/llvm/lib/libomp.dylib'"
+    directories:
+      source: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-EdFSyp"
+      binary: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-EdFSyp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/llvm/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-EdFSyp'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_972ed
+        [1/2] /usr/bin/clang++   -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0   -Xclang -fopenmp -MD -MT CMakeFiles/cmTC_972ed.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_972ed.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_972ed.dir/OpenMPTryFlag.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-EdFSyp/OpenMPTryFlag.cpp
+        FAILED: CMakeFiles/cmTC_972ed.dir/OpenMPTryFlag.cpp.o 
+        /usr/bin/clang++   -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0   -Xclang -fopenmp -MD -MT CMakeFiles/cmTC_972ed.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_972ed.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_972ed.dir/OpenMPTryFlag.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-EdFSyp/OpenMPTryFlag.cpp
+        /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-EdFSyp/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:252 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-ZMrkTu"
+      binary: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-ZMrkTu"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/llvm/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-ZMrkTu'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_17555
+        [1/2] /usr/bin/clang   -Xclang -fopenmp -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -MD -MT CMakeFiles/cmTC_17555.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_17555.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_17555.dir/OpenMPTryFlag.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-ZMrkTu/OpenMPTryFlag.c
+        FAILED: CMakeFiles/cmTC_17555.dir/OpenMPTryFlag.c.o 
+        /usr/bin/clang   -Xclang -fopenmp -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -MD -MT CMakeFiles/cmTC_17555.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_17555.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_17555.dir/OpenMPTryFlag.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-ZMrkTu/OpenMPTryFlag.c
+        /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-ZMrkTu/OpenMPTryFlag.c:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:354 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "Trying C OpenMP compiler with '/opt/homebrew/opt/llvm/lib/libomp.dylib'"
+    directories:
+      source: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-9Hwszc"
+      binary: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-9Hwszc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/llvm/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-9Hwszc'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_3bcb1
+        [1/2] /usr/bin/clang   -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0   -Xclang -fopenmp -MD -MT CMakeFiles/cmTC_3bcb1.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_3bcb1.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_3bcb1.dir/OpenMPTryFlag.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-9Hwszc/OpenMPTryFlag.c
+        FAILED: CMakeFiles/cmTC_3bcb1.dir/OpenMPTryFlag.c.o 
+        /usr/bin/clang   -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0   -Xclang -fopenmp -MD -MT CMakeFiles/cmTC_3bcb1.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_3bcb1.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_3bcb1.dir/OpenMPTryFlag.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-9Hwszc/OpenMPTryFlag.c
+        /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-9Hwszc/OpenMPTryFlag.c:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:252 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-ZfTuLs"
+      binary: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-ZfTuLs"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/llvm/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-ZfTuLs'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_246a7
+        [1/2] /usr/bin/clang++   -Xclang -fopenmp -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -MD -MT CMakeFiles/cmTC_246a7.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_246a7.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_246a7.dir/OpenMPTryFlag.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-ZfTuLs/OpenMPTryFlag.cpp
+        FAILED: CMakeFiles/cmTC_246a7.dir/OpenMPTryFlag.cpp.o 
+        /usr/bin/clang++   -Xclang -fopenmp -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -MD -MT CMakeFiles/cmTC_246a7.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_246a7.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_246a7.dir/OpenMPTryFlag.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-ZfTuLs/OpenMPTryFlag.cpp
+        /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-ZfTuLs/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:354 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "Trying CXX OpenMP compiler with '/opt/homebrew/opt/llvm/lib/libomp.dylib'"
+    directories:
+      source: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-CCmXvC"
+      binary: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-CCmXvC"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/llvm/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-CCmXvC'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_eb3e9
+        [1/2] /usr/bin/clang++   -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0   -Xclang -fopenmp -MD -MT CMakeFiles/cmTC_eb3e9.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_eb3e9.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_eb3e9.dir/OpenMPTryFlag.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-CCmXvC/OpenMPTryFlag.cpp
+        FAILED: CMakeFiles/cmTC_eb3e9.dir/OpenMPTryFlag.cpp.o 
+        /usr/bin/clang++   -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0   -Xclang -fopenmp -MD -MT CMakeFiles/cmTC_eb3e9.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_eb3e9.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_eb3e9.dir/OpenMPTryFlag.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-CCmXvC/OpenMPTryFlag.cpp
+        /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-CCmXvC/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:252 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-TvxjfF"
+      binary: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-TvxjfF"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/llvm/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-TvxjfF'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_00c1b
+        [1/2] /usr/bin/clang   -Xclang -fopenmp -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -MD -MT CMakeFiles/cmTC_00c1b.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_00c1b.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_00c1b.dir/OpenMPTryFlag.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-TvxjfF/OpenMPTryFlag.c
+        FAILED: CMakeFiles/cmTC_00c1b.dir/OpenMPTryFlag.c.o 
+        /usr/bin/clang   -Xclang -fopenmp -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -MD -MT CMakeFiles/cmTC_00c1b.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_00c1b.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_00c1b.dir/OpenMPTryFlag.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-TvxjfF/OpenMPTryFlag.c
+        /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-TvxjfF/OpenMPTryFlag.c:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:354 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "Trying C OpenMP compiler with '/opt/homebrew/opt/llvm/lib/libomp.dylib'"
+    directories:
+      source: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-B2jCwK"
+      binary: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-B2jCwK"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/llvm/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-B2jCwK'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_848aa
+        [1/2] /usr/bin/clang   -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0   -Xclang -fopenmp -MD -MT CMakeFiles/cmTC_848aa.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_848aa.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_848aa.dir/OpenMPTryFlag.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-B2jCwK/OpenMPTryFlag.c
+        FAILED: CMakeFiles/cmTC_848aa.dir/OpenMPTryFlag.c.o 
+        /usr/bin/clang   -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0   -Xclang -fopenmp -MD -MT CMakeFiles/cmTC_848aa.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_848aa.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_848aa.dir/OpenMPTryFlag.c.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-B2jCwK/OpenMPTryFlag.c
+        /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-B2jCwK/OpenMPTryFlag.c:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:252 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-wkTnVJ"
+      binary: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-wkTnVJ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/llvm/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-wkTnVJ'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_2abeb
+        [1/2] /usr/bin/clang++   -Xclang -fopenmp -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -MD -MT CMakeFiles/cmTC_2abeb.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_2abeb.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_2abeb.dir/OpenMPTryFlag.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-wkTnVJ/OpenMPTryFlag.cpp
+        FAILED: CMakeFiles/cmTC_2abeb.dir/OpenMPTryFlag.cpp.o 
+        /usr/bin/clang++   -Xclang -fopenmp -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0 -MD -MT CMakeFiles/cmTC_2abeb.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_2abeb.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_2abeb.dir/OpenMPTryFlag.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-wkTnVJ/OpenMPTryFlag.cpp
+        /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-wkTnVJ/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:354 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:11 (find_package)"
+    description: "Trying CXX OpenMP compiler with '/opt/homebrew/opt/llvm/lib/libomp.dylib'"
+    directories:
+      source: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-4kGh8N"
+      binary: "/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-4kGh8N"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/llvm/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "15.0"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_Xclang fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-4kGh8N'
+        
+        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_b18d9
+        [1/2] /usr/bin/clang++   -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0   -Xclang -fopenmp -MD -MT CMakeFiles/cmTC_b18d9.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_b18d9.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_b18d9.dir/OpenMPTryFlag.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-4kGh8N/OpenMPTryFlag.cpp
+        FAILED: CMakeFiles/cmTC_b18d9.dir/OpenMPTryFlag.cpp.o 
+        /usr/bin/clang++   -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.0   -Xclang -fopenmp -MD -MT CMakeFiles/cmTC_b18d9.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_b18d9.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_b18d9.dir/OpenMPTryFlag.cpp.o -c /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-4kGh8N/OpenMPTryFlag.cpp
+        /Users/mwo/Documents/GitHub/C++/Practice/Math/build/CMakeFiles/CMakeScratch/TryCompile-4kGh8N/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+            2 | #include <omp.h>
+              |          ^~~~~~~
+        1 error generated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
